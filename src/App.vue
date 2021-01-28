@@ -41,11 +41,11 @@ export default {
       login: this.login,
       logout: this.logout,
       emails: [
-        {id: 1, theme: 'Купил себе PlayStation 5', body: 'Бла бла бла'},
-        {id: 2, theme: 'Эмигрант', body: 'Мазафака мазафака мазафака'},
-        {id: 3, theme: 'Хочу изучить весь Mazafaka!', body: 'Епта'},
-        {id: 4, theme: 'Чашечки', body: 'два по 0,75 за милых дам'},
-        {id: 5, theme: 'А что там на счет Vue Hooks?', body: 'Бла бла бла'}
+        {id: '1', title: 'Купил себе PlayStation 5', body: 'Бла бла бла'},
+        {id: '2', title: 'Эмигрант', body: 'Мазафака мазафака мазафака'},
+        {id: '3', title: 'Хочу изучить весь Mazafaka!', body: 'Епта'},
+        {id: '4', title: 'Чашечки', body: 'два по 0,75 за милых дам'},
+        {id: '5', title: 'А что там на счет Vue Hooks?', body: 'Бла бла бла'}
       ]
     }
   }

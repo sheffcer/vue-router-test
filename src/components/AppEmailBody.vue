@@ -1,8 +1,8 @@
 <template>
   <div>
-    <h2>{{email.theme}}</h2>
+    <h2>{{email.title}}</h2>
     <p>{{email.body}}</p>
-    <button class="btn">Закрыть</button>
+    <button class="btn" @click="$router.push('/login')">Закрыть</button>
   </div>
 </template>
 
@@ -14,7 +14,7 @@ export default {
   },
   computed: {
     email () {
-      return this.emails.find(e => e.id == this.mailId)
+      return this.emails.find(e => e.id === this.mailId)
     }
   }
 }

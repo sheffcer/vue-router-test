@@ -4,7 +4,7 @@
       <ul class="list">
         <li class="list-item" v-for="email in emails" :key="email.id">
           <router-link :to="'/mail/' + email.id">
-            {{email.theme}}
+            {{email.title}}
           </router-link>
         </li>
       </ul>
