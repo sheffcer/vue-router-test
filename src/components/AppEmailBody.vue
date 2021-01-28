@@ -1,13 +1,22 @@
 <template>
   <div>
-    <h2>Тема письма</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci animi, cumque ea laborum laudantium nostrum odio quis soluta sunt velit?</p>
+    <h2>{{email.theme}}</h2>
+    <p>{{email.body}}</p>
     <button class="btn">Закрыть</button>
   </div>
 </template>
 
 <script>
 export default {
+  inject: ['emails'],
+  props: {
+    mailId: String
+  },
+  computed: {
+    email () {
+      return this.emails.find(e => e.id == this.mailId)
+    }
+  }
 }
 </script>
 
