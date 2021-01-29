@@ -1,7 +1,7 @@
 <template>
-  <div>
-    <h2>{{email[0]}}</h2>
-    <!-- <p>{{email[0].body}}</p> -->
+  <div v-for="item in email" :key="item">
+    <h2>{{item.title}}</h2>
+    <p>{{item.body}}</p>
     <button class="btn" @click="$router.push('/login')">Закрыть</button>
   </div>
 </template>
