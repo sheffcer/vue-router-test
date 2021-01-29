@@ -2,7 +2,7 @@
   <div v-for="item in email" :key="item">
     <h2>{{item.title}}</h2>
     <p>{{item.body}}</p>
-    <button class="btn" @click="$router.push('/login')">Закрыть</button>
+    <button class="btn" @click="$router.push('/mail')">Закрыть</button>
   </div>
 </template>
 
